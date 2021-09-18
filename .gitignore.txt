@@ -1,0 +1,1 @@
+app\public\wp-content\themes\atlasTheme\node_modules
