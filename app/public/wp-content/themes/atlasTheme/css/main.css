@@ -31939,11 +31939,16 @@ html, body {
 .column {
   width: 33%;
   margin: 0;
-  transition: all 0.5s ease;
+  transition: all 0.7s ease;
 }
 
 .column.wide {
-  width: 77% !important;
+  width: 70% !important;
+}
+
+.column iframe {
+  width: 100% !important;
+  height: 540px !important;
 }
 
 #frontpage {
@@ -31996,6 +32001,13 @@ html, body {
   background-image: url("../img/frontPageBG.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#frontpage {
+  background-image: url("../img/frontPageBG.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 @media (min-width: 640px){

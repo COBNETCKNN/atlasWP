@@ -1,1 +1,11 @@
 [19-Sep-2021 13:27:38 UTC] PHP Parse error:  syntax error, unexpected '|' in C:\Users\COBNETCKNN\Local Sites\atlaswp\app\public\wp-content\themes\atlasTheme\header.php on line 7
+[19-Sep-2021 21:08:46 UTC] PHP Parse error:  syntax error, unexpected '<' in C:\Users\COBNETCKNN\Local Sites\atlaswp\app\public\wp-content\themes\atlasTheme\front-page.php on line 5
+[19-Sep-2021 21:08:57 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in C:\Users\COBNETCKNN\Local Sites\atlaswp\app\public\wp-content\themes\atlasTheme\front-page.php on line 5
+[19-Sep-2021 21:11:08 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function the_field(), 0 passed in C:\Users\COBNETCKNN\Local Sites\atlaswp\app\public\wp-content\themes\atlasTheme\front-page.php on line 12 and at least 1 expected in C:\Users\COBNETCKNN\Local Sites\atlaswp\app\public\wp-content\plugins\advanced-custom-fields-pro-master\includes\api\api-template.php:79
+Stack trace:
+#0 C:\Users\COBNETCKNN\Local Sites\atlaswp\app\public\wp-content\themes\atlasTheme\front-page.php(12): the_field()
+#1 C:\Users\COBNETCKNN\Local Sites\atlaswp\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\COBNET...')
+#2 C:\Users\COBNETCKNN\Local Sites\atlaswp\app\public\wp-blog-header.php(19): require_once('C:\\Users\\COBNET...')
+#3 C:\Users\COBNETCKNN\Local Sites\atlaswp\app\public\index.php(17): require('C:\\Users\\COBNET...')
+#4 {main}
+  thrown in C:\Users\COBNETCKNN\Local Sites\atlaswp\app\public\wp-content\plugins\advanced-custom-fields-pro-master\includes\api\api-template.php on line 79

@@ -25,7 +25,7 @@
                     $soundcloudLink = get_field('soundcloud_link');
                     $linkedinLink = get_field('linkedin_link');
                     ?>
-                    <div class="flex justify-start mt-5 text-5xl">
+                    <div class="flex justify-start mt-5 text-4xl">
                         <a href="<?php echo $instagramLink;?>" target=”_blank”>
                             <i class="fab fa-instagram text-pink-500 hvr-grow"></i>
                         </a>

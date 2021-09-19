@@ -1,22 +1,31 @@
 <?php get_header(); ?>
-<section id="columns" class="bg-black h-3/6 flex justify-center">
+<section id="columns" class="bg-black h-auto flex justify-center">
+<?php if( have_rows('column_videos') ): ?>
+    <?php while( have_rows('column_videos') ): the_row(); 
+
+    $firstVideo = get_sub_field('first_video');
+    $secondVideo = get_sub_field('second_video');
+    $thirdVideo = get_sub_field('third_video');
+?>
     <!-- FIRST COLUMN -->
     <div class="column">
-        <iframe width="100%" height="600" src="https://www.youtube.com/embed/lTxn2BuqyzU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <?php echo $firstVideo; ?>
     </div>
     <!-- SECOND COLUMN -->
     <div class="column">
-        <iframe width="100%" height="600" src="https://www.youtube.com/embed/lTxn2BuqyzU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <?php echo $secondVideo; ?>
     </div>
     <!-- THIRD COLUMN -->
     <div class="column">
-        <iframe width="100%" height="600" src="https://www.youtube.com/embed/lTxn2BuqyzU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <?php echo $thirdVideo; ?>
     </div>
+    <?php endwhile; ?>
+<?php endif; ?>
 </section>
 <section id="frontpage" class="font-montserrat text-white text-center">
     <section id="whatwedo">
         <div class="container mx-auto">
-         <h1 class="text-2xl font-bold pt-10">What We Do at <?php echo bloginfo('name'); ?></h1>
+         <h1 class="text-2xl font-bold pt-10"><?php echo bloginfo('name'); ?> | Music For Media</h1>
          <!-- CHECKBOXES -->
          <div class="whatwedo_checkboxes">
             <div class="flex justify-center my-auto text-lg mt-7">
@@ -41,7 +50,7 @@
             </div>
          </div>
          <!-- CONTACT US -->
-         <a href="<?php echo esc_url(site_url('/contact-us'));?>">
+         <a href="<?php echo esc_url(site_url('/contact'));?>">
             <button class="hvr-grow bg-black text-white uppercase font-bold py-2 px-6 rounded-full border-2 border-white border-opacity-50 mt-9">
             Contact Us
             </button>
