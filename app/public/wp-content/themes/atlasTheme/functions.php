@@ -20,3 +20,4 @@ add_theme_support('menus');
 
 // CUSTOM IMAGE SIZES
 add_image_size('aboutusGallery', 700, 500, true);
+add_image_size('testimonialSize', 370, 210, true);

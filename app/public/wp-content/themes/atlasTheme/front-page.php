@@ -13,7 +13,7 @@
         <iframe width="100%" height="600" src="https://www.youtube.com/embed/lTxn2BuqyzU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </section>
-<section id="frontpage" class="bg-black font-montserrat text-white text-center">
+<section id="frontpage" class="font-montserrat text-white text-center">
     <section id="whatwedo">
         <div class="container mx-auto">
          <h1 class="text-2xl font-bold pt-10">What We Do at <?php echo bloginfo('name'); ?></h1>
