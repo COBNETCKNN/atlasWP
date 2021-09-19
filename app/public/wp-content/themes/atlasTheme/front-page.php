@@ -1,9 +1,22 @@
 <?php get_header(); ?>
-
+<section id="columns" class="bg-black h-3/6 flex justify-center">
+    <!-- FIRST COLUMN -->
+    <div class="column">
+        <iframe width="100%" height="600" src="https://www.youtube.com/embed/lTxn2BuqyzU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <!-- SECOND COLUMN -->
+    <div class="column">
+        <iframe width="100%" height="600" src="https://www.youtube.com/embed/lTxn2BuqyzU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <!-- THIRD COLUMN -->
+    <div class="column">
+        <iframe width="100%" height="600" src="https://www.youtube.com/embed/lTxn2BuqyzU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
 <section id="frontpage" class="bg-black font-montserrat text-white text-center">
     <section id="whatwedo">
         <div class="container mx-auto">
-         <h1 class="text-2xl font-bold">What We Do at <?php echo bloginfo('name'); ?></h1>
+         <h1 class="text-2xl font-bold pt-10">What We Do at <?php echo bloginfo('name'); ?></h1>
          <!-- CHECKBOXES -->
          <div class="whatwedo_checkboxes">
             <div class="flex justify-center my-auto text-lg mt-7">
@@ -29,7 +42,7 @@
          </div>
          <!-- CONTACT US -->
          <a href="<?php echo esc_url(site_url('/contact-us'));?>">
-            <button class="bg-black text-white uppercase font-bold py-2 px-6 rounded-full border-2 border-white border-opacity-50 mt-9">
+            <button class="hvr-grow bg-black text-white uppercase font-bold py-2 px-6 rounded-full border-2 border-white border-opacity-50 mt-9">
             Contact Us
             </button>
          </a>

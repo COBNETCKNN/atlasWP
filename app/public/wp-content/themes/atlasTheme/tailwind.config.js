@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: ['Montserrat'],
+        abhaya: ['Abhaya Libre'],
       },
       backgroundImage: {
         'footer-background': "url('../atlasTheme/img/footerBG.jpg')",

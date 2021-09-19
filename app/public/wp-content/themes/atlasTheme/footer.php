@@ -22,11 +22,11 @@
             $linkedinLink = get_field('linkedin_link');
             ?>
             <div class="flex justify-center text-3xl">
-                <a href="<?php echo $instagramLink;?>" target=”_blank”><i class="fab fa-instagram mx-5"></i></a>
-                <a href="<?php echo $facebookLink;?>" target=”_blank”><i class="fab fa-facebook mx-5"></i></a>
-                <a href="<?php echo $youtubeLink;?>" target=”_blank”><i class="fab fa-youtube mx-5"></i></a>
-                <a href="<?php echo $soundcloudLink;?>" target=”_blank”><i class="fab fa-soundcloud mx-5"></i></a>
-                <a href="<?php echo $linkedinLink;?>" target=”_blank”><i class="fab fa-linkedin mx-5"></i></a>
+                <a href="<?php echo $instagramLink;?>" target=”_blank”><i class="hvr-grow fab fa-instagram mx-5"></i></a>
+                <a href="<?php echo $facebookLink;?>" target=”_blank”><i class="hvr-grow fab fa-facebook mx-5"></i></a>
+                <a href="<?php echo $youtubeLink;?>" target=”_blank”><i class="hvr-grow fab fa-youtube mx-5"></i></a>
+                <a href="<?php echo $soundcloudLink;?>" target=”_blank”><i class="hvr-grow fab fa-soundcloud mx-5"></i></a>
+                <a href="<?php echo $linkedinLink;?>" target=”_blank”><i class="hvr-grow fab fa-linkedin mx-5"></i></a>
             </div>
             <!-- UNDERLINE AND INFO ABOUT DEVELOPER -->
             <div class="footer-line bg-gray-200 mt-10 mx-40"></div>
