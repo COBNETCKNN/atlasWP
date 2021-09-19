@@ -20,7 +20,7 @@
                     <ul class="slick">
                         <?php foreach( $images as $image ): ?>
                             <li class="">                 
-                            <img class="clients__image flex justify-center px-3 lg:px-0 mx-auto" src="<?php echo esc_url($image['sizes']['aboutusGallery']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                            <img class="clients__image shadow-inner rounded flex justify-center px-3 lg:px-0 mx-auto" src="<?php echo esc_url($image['sizes']['aboutusGallery']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                             </li>
                         <?php endforeach; ?>
                     </ul>

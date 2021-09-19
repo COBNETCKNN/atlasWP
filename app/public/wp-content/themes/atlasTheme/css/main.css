@@ -31984,6 +31984,20 @@ html, body {
   background-size: cover;
 }
 
+#contact_heading {
+  background-image: url("../img/contactBG.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+}
+
+#contactContent {
+  background-image: url("../img/frontPageBG.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
