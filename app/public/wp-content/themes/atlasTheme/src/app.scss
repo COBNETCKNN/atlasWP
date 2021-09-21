@@ -50,14 +50,10 @@ html, body {
   transform: scale(1.2);
 }
 
-#columns {
-    height: 600px;
-}
-
 .column {
-  width: 33%;
+  width: 34%;
   margin: 0;
-  transition: all 0.7s ease;
+  transition: all 1.5s ease;
   &.wide {
     width: 70%!important;
   }
@@ -65,7 +61,8 @@ html, body {
 
 .column iframe {
   width: 100% !important;
-  height: 540px !important;
+  height: 100% !important;
+
 }
 
 #frontpage {
@@ -127,4 +124,9 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, 0.05);
+}
+
+.frontpage_embed-container iframe {
+  width: 1260px;
 }

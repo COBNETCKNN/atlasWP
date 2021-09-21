@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section id="columns" class="bg-black h-auto flex justify-center">
+<section id="columns" class="bg-black h-4/5 flex justify-center">
 <?php if( have_rows('column_videos') ): ?>
     <?php while( have_rows('column_videos') ): the_row(); 
 
@@ -8,16 +8,19 @@
     $thirdVideo = get_sub_field('third_video');
 ?>
     <!-- FIRST COLUMN -->
-    <div class="column">
+    <div class="column opacity-70 hover:opacity-100">
         <?php echo $firstVideo; ?>
+        <div class="black_overlay"></div>
     </div>
     <!-- SECOND COLUMN -->
-    <div class="column">
+    <div class="column opacity-70 hover:opacity-100">
         <?php echo $secondVideo; ?>
+        <div class="black_overlay"></div>
     </div>
     <!-- THIRD COLUMN -->
-    <div class="column">
+    <div class="column opacity-70 hover:opacity-100">
         <?php echo $thirdVideo; ?>
+        <div class="black_overlay"></div>
     </div>
     <?php endwhile; ?>
 <?php endif; ?>
@@ -60,13 +63,10 @@
     <section id="content" class="mt-20">
         <div class="container mx-auto font-montserrat text-white px-32">
             <h4 class="text-base"><?php the_content(); ?></h4>
-
-            <?php 
-            //link for youtube iframe
-            $youtubevideoLink = get_field('youtube_video_link');
-            ?>
-
-             <iframe width="1260" height="480" class="mt-7 mx-auto" src="<?php echo $youtubevideoLink?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- EMBEDED VIDEO -->
+            <div class="frontpage_embed-container pt-10 flex justify-center">
+                <?php the_field('youtube_front_page_video'); ?>
+            </div>
         </div>
     </section>
     <section id="soundcloud">
