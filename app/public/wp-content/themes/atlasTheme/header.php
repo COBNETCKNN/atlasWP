@@ -13,24 +13,36 @@
 <?php wp_body_open(); ?>
 
 <nav id="navbar">
-    <div class="mx-auto">
+     <div class="m-auto bg-black">   
+        <div class="lg:flex justify-between lg:px-10">
+        <!-- LEFT SECTION -->
         <div class="flex justify-between py-4 bg-black">
-        <!-- LOGO SECTION -->
-        <div class="logo pl-10">
-        <a href="<?php echo home_url(); ?>">
-            <?php 
-                $custom_logo_id = get_theme_mod( 'custom_logo' );
-                $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
-                echo '<img src="' . esc_url( $custom_logo_url ) . '" alt="">';
-            ?>
-            </a>
+        <a href="/">
+            <div class="flex justify-start">
+                <div class="logo">
+                    <?php 
+                        $custom_logo_id = get_theme_mod( 'custom_logo' );
+                        $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
+                        echo '<img src="' . esc_url( $custom_logo_url ) . '" alt="">';
+                    ?>
+                </div>
+
+            </div>
+        </a>
+        <!-- HAMBURGER MENU -->
+        <button class="nav-toggler lg:hidden rounded" data-target="#navigation">
+            <i class="fas fa-bars text-3xl px-4 text-white"></i>
+        </button>
         </div>
-        <!-- NAV ITEMS SECTION -->
-        <div class="flex justify-center my-auto mr-10">
-            <?php wp_nav_menu(array(
-                'menu_class' => 'flex text-gray-200 font-montserrat text-base font-medium leading-loose',
-            )); ?>
+
+        <div class="hidden top-navbar w-full lg:flex lg:w-auto md:mt-0 bg-black" id="navigation">
+          <!-- MIDDLE MENU SECTION -->
+          <div class="flex text-textgray lg:text-xl xl:text-2xl m-auto">
+              <?php wp_nav_menu(array(
+                'menu_class' => 'lg:flex text-gray-200 font-montserrat text-xl lg:text-base font-medium leading-loose',
+            )); ?>  
+          </div>
         </div>
-        </div>
+      </div>
     </div>
 </nav>
