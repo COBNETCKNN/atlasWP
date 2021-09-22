@@ -31,7 +31,6 @@
             <!-- UNDERLINE AND INFO ABOUT DEVELOPER -->
             <div class="footer-line bg-gray-200 mt-10 mx-40"></div>
             <p class="text-center text-gray-200 mt-5">Copyright &copy; <span id="year"><?php echo date("Y"); ?></span> <a href="https://meshkin.me/" target=”_blank”>Meshkin Ahmed</p>
-
     </div>
 </footer>
 

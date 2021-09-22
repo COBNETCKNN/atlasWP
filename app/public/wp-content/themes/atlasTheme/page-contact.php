@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
 <section id="contact">
-    <section id="contact_heading" class="py-40">
+    <section id="contact_heading" class="py-28 lg:py-32 xl:py-40">
      <h1 class="text-4xl text-center font-abhaya uppercase text-white"><?php the_title(); ?></h1>
     </section>
     <section id="contactContent" class="bg-black font-montserrat">
         <div class="container mx-auto">
-            <div class="grid grid-cols-2 gap-4 px-32 py-20">
+            <div class="lg:grid grid-cols-2 gap-4 lg:px-32 py-10 lg:py-20">
                 <!-- CONTENT AREA -->
                 <div class="">
                     <h2 class="text-3xl text-white font-semibold">Contact Us</h2>
@@ -45,7 +45,7 @@
 
                 </div>
                 <!-- LOGO AREA -->
-                <div class="">
+                <div class="my-auto mt-7 lg:mt-0">
                     <?php the_post_thumbnail(array ('class="h-3/5 w-3/5 mx-auto')); ?>
                 </div>
             </div>

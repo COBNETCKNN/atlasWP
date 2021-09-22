@@ -32011,6 +32011,24 @@ html, body {
   width: 1260px;
 }
 
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .slick-slide {
+    height: auto !important;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1280px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;

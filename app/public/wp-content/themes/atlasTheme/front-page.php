@@ -60,8 +60,8 @@
          </a>
         </div>
     </section>
-    <section id="content" class="mt-20">
-        <div class="container mx-auto font-montserrat text-white px-32">
+    <section id="content" class="mt-10 lg:mt-20">
+        <div class="container mx-auto font-montserrat text-white lg:px-32">
             <h4 class="text-base"><?php the_content(); ?></h4>
             <!-- EMBEDED VIDEO -->
             <div class="frontpage_embed-container pt-10 flex justify-center">
@@ -76,7 +76,7 @@
             // Check rows exists.
             if( have_rows('soundcloud_embed_repeater') ): ?>
 
-            <div class="px-32 py-14">
+            <div class="lg:px-32 py-14">
 
                 <?php  // Loop through rows.
                 while( have_rows('soundcloud_embed_repeater') ) : the_row(); ?>
